@@ -2,125 +2,93 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nusantara Aluminium</title>
   <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f2f5;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(to right, #0f172a, #1e3a8a);
-      color: white;
-      padding: 20px 40px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 15px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background-color: #e2e8f0;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #1e3a8a;
-    }
-    .hero p {
-      font-size: 1.1em;
-      margin-top: 10px;
-    }
-    .button {
-      margin-top: 20px;
-      background: #1e3a8a;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1em;
-    }
-    .section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .products, .contact {
-      background-color: white;
-    }
-    .products img {
-      width: 100%;
-      max-width: 300px;
-      margin: 10px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, nav, footer { background: #1e293b; color: white; padding: 1em; }
+    nav a { margin: 0 1em; color: white; text-decoration: none; }
+    section { padding: 2em; }
+    .hero { background: #0f172a; color: white; text-align: center; padding: 4em 2em; }
+    .hero h1 { font-size: 2.5em; margin-bottom: 0.5em; }
+    .hero p { font-size: 1.2em; }
+    .button { background: #2563eb; color: white; padding: 0.75em 1.5em; border: none; text-decoration: none; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1em; }
+    .card { border: 1px solid #ccc; padding: 1em; background: #f1f5f9; }
+    footer { text-align: center; font-size: 0.9em; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Nusantara Aluminium</h1>
-    <nav>
-      <a href="#produk">Produk</a>
-      <a href="#galeri">Galeri</a>
-      <a href="#kontak">Kontak</a>
-    </nav>
-  </header>
 
-  <div class="hero">
-    <h1>Solusi Pintu & Kusen Aluminium Terpercaya</h1>
-    <p>Kami melayani pembuatan dan pemasangan pintu, jendela, kitchen set, dan lain-lain.</p>
-    <a href="#produk"><button class="button">Lihat Produk</button></a>
-  </div>
+<header>
+  <h2>Nusantara Aluminium</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#produk">Produk</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
 
-  <div class="section products" id="produk">
-    <h2>Produk Unggulan</h2>
-    <p>Pintu Aluminium, Kusen, Jendela, Kitchen Set, dan lainnya.</p>
-    <div>
-      <img src="https://via.placeholder.com/300x200?text=Pintu+Aluminium" alt="Pintu Aluminium"/>
-      <img src="https://via.placeholder.com/300x200?text=Kusen+Aluminium" alt="Kusen Aluminium"/>
-      <img src="https://via.placeholder.com/300x200?text=Kitchen+Set" alt="Kitchen Set"/>
+<section class="hero" id="home">
+  <h1>Selamat Datang di Nusantara Aluminium</h1>
+  <p>Spesialis Pintu, Jendela, dan Kusen Aluminium Berkualitas</p>
+  <a class="button" href="#produk">Lihat Produk</a>
+</section>
+
+<section id="tentang">
+  <h2>Tentang Kami</h2>
+  <p>Nusantara Aluminium adalah usaha produksi dan pemasangan pintu, jendela, kusen aluminium, dan kitchen set yang berdiri di Kabupaten Pasuruan. Kami mengutamakan kualitas material, kerapian pekerjaan, serta pelayanan tepat waktu.</p>
+  <p><strong>Alamat:</strong> Jl. Sedarum–Sumur Sawah, Kec. Nguling, Kab. Pasuruan, 67185 (Selatan Rel KA)</p>
+</section>
+
+<section id="produk">
+  <h2>Produk Kami</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Pintu Aluminium</h3>
+      <img src="https://via.placeholder.com/200x150" alt="Pintu">
+      <p>Kuat, tahan lama, dan desain modern.</p>
+    </div>
+    <div class="card">
+      <h3>Jendela Aluminium</h3>
+      <img src="https://via.placeholder.com/200x150" alt="Jendela">
+      <p>Sirkulasi udara optimal, desain minimalis.</p>
+    </div>
+    <div class="card">
+      <h3>Kusen Aluminium</h3>
+      <img src="https://via.placeholder.com/200x150" alt="Kusen">
+      <p>Pemasangan presisi dan tampilan elegan.</p>
+    </div>
+    <div class="card">
+      <h3>Kitchen Set</h3>
+      <img src="https://via.placeholder.com/200x150" alt="Kitchen Set">
+      <p>Material tahan lama, finishing rapi.</p>
     </div>
   </div>
+</section>
 
-  <div class="section galeri" id="galeri">
-    <h2>Galeri Pekerjaan</h2>
-    <p>(Contoh pekerjaan akan ditampilkan di sini)</p>
-    <div>
-      <img src="https://via.placeholder.com/300x200?text=Proyek+1" alt="Proyek 1"/>
-      <img src="https://via.placeholder.com/300x200?text=Proyek+2" alt="Proyek 2"/>
-      <img src="https://via.placeholder.com/300x200?text=Proyek+3" alt="Proyek 3"/>
-    </div>
+<section id="galeri">
+  <h2>Galeri Proyek</h2>
+  <div class="grid">
+    <img src="https://via.placeholder.com/200x150" alt="Proyek 1">
+    <img src="https://via.placeholder.com/200x150" alt="Proyek 2">
+    <img src="https://via.placeholder.com/200x150" alt="Proyek 3">
   </div>
+</section>
 
-  <div class="section contact" id="kontak">
-    <h2>Kontak Kami</h2>
-    <p>📞 0822-3185-9986</p>
-    <p>📍 Jl. Sedarum - Sumur Sawah, Kec. Nguling, Kab. Pasuruan (Selatan Rel KA)</p>
-  </div>
+<section id="kontak">
+  <h2>Kontak Kami</h2>
+  <p><strong>Nama Usaha:</strong> Nusantara Aluminium</p>
+  <p><strong>No. WA:</strong> <a href="https://wa.me/6282231859986">0822-3185-9986</a></p>
+  <p><strong>Alamat:</strong> Jl. Sedarum–Sumur Sawah, Nguling – Pasuruan</p>
+</section>
 
-  <footer>
-    © 2025 Nusantara Aluminium. All rights reserved.
-  </footer>
+<footer>
+  &copy; 2025 Nusantara Aluminium
+</footer>
+
 </body>
 </html>
