@@ -1,61 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Nusantara Aluminium</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        nav { background: #0077cc; padding: 10px; color: white; }
-        nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
-        section { padding: 20px; }
-        .product-button { margin: 10px 0; padding: 10px; background: #eee; cursor: pointer; border: none; width: 100%; text-align: left; }
-        .product-detail { display: none; margin-top: 10px; padding: 10px; background: #f9f9f9; border: 1px solid #ccc; }
-        img { max-width: 100%; height: auto; margin-top: 10px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nusantara Aluminium</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+    header, nav, footer { background-color: #2c3e50; color: white; padding: 1em; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; }
+    .hero { padding: 2em; background-color: #34495e; color: white; text-align: center; }
+    .section { padding: 2em; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1em; }
+    .product-card { background: white; padding: 1em; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    .product-card img { width: 100%; height: 150px; object-fit: cover; }
+    .btn { background: #2980b9; color: white; padding: 0.5em 1em; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#tentang">Tentang Kami</a>
-        <a href="#produk">Produk</a>
-        <a href="#galeri">Galeri</a>
-        <a href="#kontak">Kontak</a>
-    </nav>
-    <section id="home">
-        <h1>Selamat Datang di Nusantara Aluminium</h1>
-        <p>Spesialis Pintu Aluminium dan Kaca Berkualitas.</p>
-    </section>
-    <section id="tentang">
-        <h2>Tentang Kami</h2>
-        <p>Kami adalah penyedia solusi aluminium untuk bangunan modern, dengan pengalaman lebih dari 10 tahun.</p>
-    </section>
-    <section id="produk">
-        <h2>Produk Kami</h2>
-        <button class="product-button" onclick="toggleDetail('produk1')">Pintu Aluminium Geser</button>
-        <div id="produk1" class="product-detail">
-            <p>Pintu aluminium geser cocok untuk ruangan sempit dan tampil modern.</p>
-            <img src="gambar/pintu-geser.jpg" alt="Pintu Geser">
-        </div>
+  <header><h1>Nusantara Aluminium</h1></header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Tentang Kami</a>
+    <a href="#">Galeri</a>
+    <a href="#">Kontak</a>
+  </nav>
+  <div class="hero">
+    <h2>Spesialis Pintu, Jendela, Kusen Aluminium dan Kitchen Set</h2>
+    <a href="#produk" class="btn">Lihat Produk</a>
+  </div>
 
-        <button class="product-button" onclick="toggleDetail('produk2')">Pintu Aluminium Ayun</button>
-        <div id="produk2" class="product-detail">
-            <p>Pintu ayun aluminium yang kuat, cocok untuk rumah dan kantor.</p>
-            <img src="gambar/pintu-ayun.jpg" alt="Pintu Ayun">
-        </div>
-    </section>
-    <section id="galeri">
-        <h2>Galeri</h2>
-        <p>Contoh hasil pekerjaan kami akan segera ditampilkan.</p>
-    </section>
-    <section id="kontak">
-        <h2>Kontak Kami</h2>
-        <p>Hubungi kami di WA: 08xxxxxxxxxx atau email: info@nusantaaraluminium.co.id</p>
-    </section>
-    <script>
-        function toggleDetail(id) {
-            var detail = document.getElementById(id);
-            detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+  <div class="section" id="produk">
+    <h2>Produk Kami</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/pintu.jpg" alt="Pintu Aluminium">
+        <h3>Pintu Aluminium</h3>
+        <a href="produk/pintu.html" class="btn">Lihat Detail</a>
+      </div>
+      <div class="product-card">
+        <img src="images/jendela.jpg" alt="Jendela Aluminium">
+        <h3>Jendela Aluminium</h3>
+        <a href="produk/jendela.html" class="btn">Lihat Detail</a>
+      </div>
+      <div class="product-card">
+        <img src="images/kusen.jpg" alt="Kusen Aluminium">
+        <h3>Kusen Aluminium</h3>
+        <a href="produk/kusen.html" class="btn">Lihat Detail</a>
+      </div>
+      <div class="product-card">
+        <img src="images/kitchen.jpg" alt="Kitchen Set">
+        <h3>Kitchen Set</h3>
+        <a href="produk/kitchen.html" class="btn">Lihat Detail</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Nusantara Aluminium</footer>
 </body>
 </html>
